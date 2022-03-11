@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@layer components {
+  .text-hover {
+    @apply hover:text-[orange] transition-colors  cursor-pointer;
+  }
+  .btn-Ric {
+    @apply px-10 py-3 border bg-yellow-500 rounded-full hover:text-white transition duration-100;
+  }
+  .btn-productItem {
+    @apply border bg-white py-5 px-3 rounded-md cursor-pointer;
+  }
+  .btn-OderItem {
+    @apply border border-yellow-200 py-2 px-5 text-yellow-300 rounded-md cursor-pointer hover:bg-yellow-400 hover:text-white hover:transition hover:duration-700;
+  }
+}
